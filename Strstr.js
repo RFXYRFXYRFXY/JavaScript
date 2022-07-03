@@ -1,8 +1,5 @@
 var strStr = function(haystack, needle) {
-    
     const m=haystack.length,n=needle.length
-
-    
     for(let i=0;i+n<=m;i++){
         let flag=true
         for(let j=0;j<n;j++){
@@ -11,9 +8,7 @@ var strStr = function(haystack, needle) {
                 break
             }
         }
-        if(flag){
-            return i
-        }
+        if(flag){return i}
     }
     return -1
 };
